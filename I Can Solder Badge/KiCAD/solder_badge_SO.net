@@ -1,0 +1,61 @@
+(export (version D)
+  (design
+    (source C:\Users\sarah.townson\Documents\KiCAD\solder_badge_SO\solder_badge_SO.sch)
+    (date "25/11/2021 16:55:49")
+    (tool "Eeschema 4.0.7")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source solder_badge_SO.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref BAT1)
+      (value battery_holder)
+      (footprint battery_holder_edited:battery_holder)
+      (libsource (lib battery_holder) (part battery_holder))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 619FBFA6))
+    (comp (ref D1)
+      (value LED)
+      (footprint digikey-footprints:LED_5mm_Radial)
+      (libsource (lib device) (part LED))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 619FBFF3)))
+  (libparts
+    (libpart (lib device) (part LED)
+      (description "LED generic")
+      (footprints
+        (fp LED*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED))
+      (pins
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib battery_holder) (part battery_holder)
+      (fields
+        (field (name Reference) BAT)
+        (field (name Value) battery_holder))
+      (pins
+        (pin (num 1) (name +) (type input))
+        (pin (num 2) (name +) (type input))
+        (pin (num 3) (name GND) (type output)))))
+  (libraries
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
+    (library (logical battery_holder)
+      (uri C:\Users\sarah.townson\Documents\KiCAD\robot_badge\battery_holder.lib)))
+  (nets
+    (net (code 1) (name GND)
+      (node (ref BAT1) (pin 3))
+      (node (ref D1) (pin 1)))
+    (net (code 2) (name "Net-(BAT1-Pad1)")
+      (node (ref BAT1) (pin 2))
+      (node (ref D1) (pin 2))
+      (node (ref BAT1) (pin 1)))))

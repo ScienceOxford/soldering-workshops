@@ -1,0 +1,4 @@
+
+(fp_lib_table
+  (lib (name "solder-badge-SO")(type KiCad)(uri "$(KIPRJMOD)/solder-badge-SO.pretty")(options "")(descr ""))
+)

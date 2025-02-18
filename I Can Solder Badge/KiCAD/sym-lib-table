@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "solder_badge_SO-rescue")(type "Legacy")(uri "${KIPRJMOD}/solder_badge_SO-rescue.lib")(options "")(descr ""))
+  (lib (name "battery_holder")(type "Legacy")(uri "C:/Users/sarah.townson/Documents/KiCAD/robot_badge/battery_holder.lib")(options "")(descr ""))
+)
