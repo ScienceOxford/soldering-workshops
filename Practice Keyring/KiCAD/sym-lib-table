@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "snowflake-cache")(type "Legacy")(uri "C:/Users/sarah.townson/Documents/KiCAD/snowflake/snowflake-cache.lib")(options "")(descr ""))
+)
