@@ -1,0 +1,4 @@
+
+(fp_lib_table
+  (lib (name "bat-design")(type KiCad)(uri "$(KIPRJMOD)/bat-design.pretty")(options "")(descr ""))
+)
